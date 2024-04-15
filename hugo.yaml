@@ -1,0 +1,37 @@
+baseURL: https://example.org/
+languageCode: en-us
+title: WolfBoy55014
+theme: ["PaperMod"]
+
+params:
+  showCodeCopyButtons: true # Post Settings
+  showBreadCrumbs: true
+  showShareButtons: true
+  
+  profileMode: # Settings for main page
+    enabled: true
+    title: "Wolfboy55014"
+    subtitle: "Welcome"
+    imageUrl: "/logo.jpg" # optional
+    imageTitle: "My Logo" # optional
+    imageWidth: 300 # custom size
+    imageHeight: 300 # custom size
+    buttons:
+      - name: Posts
+        url: "/posts"
+      - name: Search
+        url: "/search"
+      - name: Github
+        url: "https://github.com/"
+
+  socialIcons: # optional
+    - name: "Github"
+      url: "https://github.com/WolfBoy55014"
+    - name: "Printables"
+      url: "https://www.printables.com/@JacobBlack_1713753"
+      
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
