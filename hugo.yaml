@@ -12,15 +12,15 @@ params:
     enabled: true
     title: "Wolfboy55014"
     subtitle: "Welcome"
-    imageUrl: "/logo.jpg" # optional
+    imageUrl: "Blog/logo.jpg" # optional
     imageTitle: "My Logo" # optional
     imageWidth: 300 # custom size
     imageHeight: 300 # custom size
     buttons:
       - name: Posts
-        url: "/posts"
+        url: "Blog/posts"
       - name: Search
-        url: "/search"
+        url: "Blog/search"
       - name: Github
         url: "https://github.com/"
 
