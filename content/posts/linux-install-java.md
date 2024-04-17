@@ -1,7 +1,6 @@
 +++
 title = 'Install Java on Linux'
 date = 2024-04-17T07:33:09-05:00
-draft = true
 
 tags = ['raspberry pi', 'java', 'linux']
 
@@ -85,3 +84,4 @@ For install instructions for Raspberry Pi, check out the [Linux](#linux) instruc
 
 # Conclusion
 ___
+I think Java is a great language, and having an easy way to install makes it even better. Huge shout-out to the creators of SDKMan, as they have saved us a huge headache! I hope this guide helped, and have fun! :wave:

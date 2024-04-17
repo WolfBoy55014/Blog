@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/Blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install Java on Linux</title>
-      <link>http://localhost:1313/Blog/posts/linux_install_java/</link>
+      <link>http://localhost:1313/Blog/posts/linux-install-java/</link>
       <pubDate>Wed, 17 Apr 2024 07:33:09 -0500</pubDate>
-      <guid>http://localhost:1313/Blog/posts/linux_install_java/</guid>
+      <guid>http://localhost:1313/Blog/posts/linux-install-java/</guid>
       <description>Intro Java is a very versatile and fast programming language. Knowing how to download Java can be extremely useful, especially when you want to do anything with Minecraft: Java Edition. I also recommend it as beginner language, as it teaches you concepts and syntax used in highly performant and robust languages.
 Prerequisites: This guide should be easy, only a basic knowledge of the command line is needed.
 Linux Install SDKMan To download, install, and manage JDKs, SDKMan is my favorite.</description>
