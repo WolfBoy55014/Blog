@@ -2,13 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/Blog/posts/formatting-test/</loc>
-    <lastmod>2024-02-25T14:15:40-06:00</lastmod>
+    <loc>http://localhost:1313/Blog/posts/linux_install_java/</loc>
+    <lastmod>2024-04-17T07:33:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/Blog/tags/java/</loc>
+    <lastmod>2024-04-17T07:33:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/Blog/tags/linux/</loc>
+    <lastmod>2024-04-17T07:33:09-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/Blog/posts/</loc>
-    <lastmod>2024-02-25T14:15:40-06:00</lastmod>
+    <lastmod>2024-04-17T07:33:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/Blog/tags/raspberry-pi/</loc>
+    <lastmod>2024-04-17T07:33:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/Blog/tags/</loc>
+    <lastmod>2024-04-17T07:33:09-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/Blog/</loc>
+    <lastmod>2024-04-17T07:33:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/Blog/posts/formatting-test/</loc>
     <lastmod>2024-02-25T14:15:40-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/Blog/posts/hello-world/</loc>
@@ -17,7 +32,5 @@
     <loc>http://localhost:1313/Blog/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/Blog/search/</loc>
-  </url><url>
-    <loc>http://localhost:1313/Blog/tags/</loc>
   </url>
 </urlset>

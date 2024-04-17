@@ -6,6 +6,28 @@
     <description>Recent content in Tags on WolfBoy55014</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Wed, 17 Apr 2024 07:33:09 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/Blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java</title>
+      <link>http://localhost:1313/Blog/tags/java/</link>
+      <pubDate>Wed, 17 Apr 2024 07:33:09 -0500</pubDate>
+      <guid>http://localhost:1313/Blog/tags/java/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/Blog/tags/linux/</link>
+      <pubDate>Wed, 17 Apr 2024 07:33:09 -0500</pubDate>
+      <guid>http://localhost:1313/Blog/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Raspberry Pi</title>
+      <link>http://localhost:1313/Blog/tags/raspberry-pi/</link>
+      <pubDate>Wed, 17 Apr 2024 07:33:09 -0500</pubDate>
+      <guid>http://localhost:1313/Blog/tags/raspberry-pi/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

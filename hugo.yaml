@@ -2,11 +2,16 @@ baseURL: https://wolfboy55014.github.io/Blog/
 languageCode: en-us
 title: WolfBoy55014
 theme: ["PaperMod"]
+enableEmoji: true
 
 params:
   showCodeCopyButtons: true # Post Settings
   showBreadCrumbs: true
   showShareButtons: true
+  ShowReadingTime: true
+  ShowToc: true
+  TocOpen: true
+  defaultTheme: auto
   
   profileMode: # Settings for main page
     enabled: true
@@ -21,6 +26,8 @@ params:
         url: "posts"
       - name: Search
         url: "search"
+      - name: Tags
+        url: "tags"
       - name: Github
         url: "https://github.com/"
 
@@ -35,3 +42,14 @@ outputs:
     - HTML
     - RSS
     - JSON # necessary for search
+
+menu:
+  main:
+    - identifier: search
+      name: Search
+      url: search
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: tags
+      weight: 20
