@@ -21,15 +21,15 @@ To install the required vendor depo:
 
 1. Click the WPILib button in the top-right corner:
 
-![WPILib Icon in the Corner](images/advantagekit_quickstart/wpilib_icon.jpg)
+![WPILib Icon in the Corner](/Blog/posts/advantagekit_quickstart/wpilib_icon.jpg)
 
-2. Click on the "Manage Vendor Libraries" button
+1. Click on the "Manage Vendor Libraries" button
 
-![Manage Vendor Libraries](images/advantagekit_quickstart/manage_libraries.jpg)
+![Manage Vendor Libraries](/Blog/posts/advantagekit_quickstart/manage_libraries.jpg)
 
-3. click "Install new libraries (online)".
+1. click "Install new libraries (online)".
 
-![Install new libraries (online)](images/advantagekit_quickstart/install_online.jpg)
+![Install new libraries (online)](/Blog/posts/advantagekit_quickstart/install_online.jpg)
 
 Now paste the link below into the box presented. :point_down:
 
@@ -48,7 +48,7 @@ Now, locate the `build.gradle` file in your project. If you can't see the Explor
 
 1. `build.gradle`.
 
-![Install new libraries (online)](images/advantagekit_quickstart/gradle_file.jpg)
+![Install new libraries (online)](/Blog/posts/advantagekit_quickstart/gradle_file.jpg)
 
 2. insert this code *before* the dependencies block:
 
