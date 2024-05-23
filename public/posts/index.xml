@@ -6,8 +6,25 @@
     <description>Recent content in Posts on WolfBoy55014</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Apr 2024 07:33:09 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 14 May 2024 15:41:01 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/Blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AdvantageKit Quick-Start</title>
+      <link>http://localhost:1313/Blog/posts/advantagekit_quickstart/</link>
+      <pubDate>Tue, 14 May 2024 15:41:01 -0500</pubDate>
+      <guid>http://localhost:1313/Blog/posts/advantagekit_quickstart/</guid>
+      <description>To install AdvantageKit In your project Install Libraries Install Vendor Depo To install the required vendor depo:
+Click the WPILib button in the top-right corner: Click on the &amp;ldquo;Manage Vendor Libraries&amp;rdquo; button click &amp;ldquo;Install new libraries (online)&amp;rdquo;. Now paste the link below into the box presented. &amp;#x1f447;
+&amp;#x1f6d1; Make sure to download the appropriate version for your WPILib version (you can check in the changelogs here). But if you are using the latest version of WPILib (you should be), you can paste in:</description>
+    </item>
+    <item>
+      <title>Pico Powered Rocket</title>
+      <link>http://localhost:1313/Blog/posts/pico_rocket/</link>
+      <pubDate>Sat, 20 Apr 2024 16:19:54 -0500</pubDate>
+      <guid>http://localhost:1313/Blog/posts/pico_rocket/</guid>
+      <description>Last summer, me and one of my friends thought it would be cool if we built a model rocket with a payload (Sensors, Camera, Lego Minifig, etc.). So, with the help of another of my friends, we got to work. We decided we wanted our payload to be a microcontroller with Adafruit&amp;rsquo;s BME280 and LSM6DSOX+LIS3MDL breakout boards.
+The original plan was to use Raspberry Pi&amp;rsquo;s new microcontroller called the Pico (seriously, it is tiny!</description>
+    </item>
     <item>
       <title>Install Java on Linux</title>
       <link>http://localhost:1313/Blog/posts/linux-install-java/</link>

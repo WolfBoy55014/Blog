@@ -2,7 +2,7 @@
 title = 'Install Java on Linux'
 date = 2024-04-17T07:33:09-05:00
 
-tags = ['raspberry pi', 'java', 'linux']
+tags = ['raspberry pi', 'java', 'linux', 'how to']
 
 [cover]
 image = "https://adoptium.net/images/social-image.png"

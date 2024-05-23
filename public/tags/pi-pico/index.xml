@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Pi Pico on WolfBoy55014</title>
+    <link>http://localhost:1313/Blog/tags/pi-pico/</link>
+    <description>Recent content in Pi Pico on WolfBoy55014</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Apr 2024 16:19:54 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/Blog/tags/pi-pico/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pico Powered Rocket</title>
+      <link>http://localhost:1313/Blog/posts/pico_rocket/</link>
+      <pubDate>Sat, 20 Apr 2024 16:19:54 -0500</pubDate>
+      <guid>http://localhost:1313/Blog/posts/pico_rocket/</guid>
+      <description>Last summer, me and one of my friends thought it would be cool if we built a model rocket with a payload (Sensors, Camera, Lego Minifig, etc.). So, with the help of another of my friends, we got to work. We decided we wanted our payload to be a microcontroller with Adafruit&amp;rsquo;s BME280 and LSM6DSOX+LIS3MDL breakout boards.
+The original plan was to use Raspberry Pi&amp;rsquo;s new microcontroller called the Pico (seriously, it is tiny!</description>
+    </item>
+  </channel>
+</rss>
