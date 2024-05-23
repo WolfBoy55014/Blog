@@ -1,7 +1,6 @@
 +++
 title = 'AdvantageKit Quick-Start'
 date = 2024-05-14T15:41:01-05:00
-draft = true
 
 tags = ['advantagekit', 'frc', 'robotics', 'how to', 'install']
 
