@@ -116,7 +116,7 @@ Good Job! :partying_face:
 
 To allow the robot to log, we need to insert some code into the `Robot.java` file. (located in `src\main\java\frc\robot\Robot.java`)
 
-1. Change the `Robot` class from extending `TimedRobot` to `LoggedRobot`. They function the axact same, except for some things listed [here](https://github.com/Mechanical-Advantage/AdvantageKit/blob/main/docs/INSTALLATION.md#robot-configuration).
+1. Change the `Robot` class from extending `TimedRobot` to `LoggedRobot`. They function the exact same, except for some things listed [here](https://github.com/Mechanical-Advantage/AdvantageKit/blob/main/docs/INSTALLATION.md#robot-configuration).
 
 ```java
 public class Robot extends TimedRobot {
