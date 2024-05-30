@@ -213,6 +213,35 @@ public class Example {
 ___
 If you find time, check out [Mechanical Advantage's documentation](https://github.com/Mechanical-Advantage/AdvantageKit/tree/main/docs), as there are many other cool features of AdvantageKit, such as simulation. Also check out [AdvantageScope](https://github.com/Mechanical-Advantage/AdvantageScope), a nice way to view your logs.
 
+# How in the World do I Log Swerve?
+
+Logging swerve was a big question when I first started out. I'll show how I did it, maybe giving you a head start.
+
+In our `SwerveSubsystem.class` I added a method:
+
+```java
+// Send the swerve modules' encoder positions to Advantage Kit
+public void logSwerveStates() {
+    
+    Logger.recordOutput("SwerveState", new SwerveModuleState[] {
+            frontLeft.getState(),
+            frontRight.getState(),
+            backLeft.getState(),
+            backRight.getState()
+    });
+}
+```
+
+```java
+public SwerveModuleState getState(){
+    return new SwerveModuleState(getDriveVelocity(), new Rotation2d(getTurningPosition()));
+}
+```
+
+Each serve module has a `getState()` method. They each return a `SwerveModuleState` that is added to the `SwerveModuleState[]` array. The `SwerveModuleState[]` is then recorded by the `recordOutput()` method.
+
+Recording the desired swerve states is also useful, as you can then see if the code and real world line up. Log them the same as before, but with the desired states every time they are updated, also making sure the names are different.
+
 # Credits
 
 These instructions were based off [Mechanical Advantage's own install instructions](https://github.com/Mechanical-Advantage/AdvantageKit/blob/main/docs/INSTALLATION.md). If you have more questions, please check their tutorials or [our 2024 comp code](https://github.com/FIRST-Team-2472/Parallax-2024-Revamped/blob/main/src/main/java/frc/robot/subsystems/SwerveSubsystem.java), specifically in the `SwerveSubsystem.class`. All credit goes to team Mechanical Advantage for the wonderful libraries and tools.

@@ -123,7 +123,7 @@ Click the WPILib button in the top-right corner: Click on the &ldquo;Manage Vend
     <h1 class="post-title entry-hint-parent">
       AdvantageKit Quick-Start
     </h1>
-    <div class="post-meta"><span title='2024-05-14 15:41:01 -0500 CDT'>May 14, 2024</span>&nbsp;·&nbsp;4 min
+    <div class="post-meta"><span title='2024-05-14 15:41:01 -0500 CDT'>May 14, 2024</span>&nbsp;·&nbsp;5 min
 
 </div>
   </header> 
@@ -158,6 +158,8 @@ Click the WPILib button in the top-right corner: Click on the &ldquo;Manage Vend
                 <li>
                     <a href="#with-autologoutput" aria-label="With @AutoLogOutput">With @AutoLogOutput</a></li></ul>
                 </li>
+                <li>
+                    <a href="#how-in-the-world-do-i-log-swerve" aria-label="How in the World do I Log Swerve?">How in the World do I Log Swerve?</a></li>
                 <li>
                     <a href="#credits" aria-label="Credits">Credits</a>
                 </li>
@@ -248,7 +250,7 @@ Click the WPILib button in the top-right corner: Click on the &ldquo;Manage Vend
 <h2 id="implement-base-code">Implement Base Code<a hidden class="anchor" aria-hidden="true" href="#implement-base-code">#</a></h2>
 <p>To allow the robot to log, we need to insert some code into the <code>Robot.java</code> file. (located in <code>src\main\java\frc\robot\Robot.java</code>)</p>
 <ol>
-<li>Change the <code>Robot</code> class from extending <code>TimedRobot</code> to <code>LoggedRobot</code>. They function the axact same, except for some things listed <a href="https://github.com/Mechanical-Advantage/AdvantageKit/blob/main/docs/INSTALLATION.md#robot-configuration">here</a>.</li>
+<li>Change the <code>Robot</code> class from extending <code>TimedRobot</code> to <code>LoggedRobot</code>. They function the exact same, except for some things listed <a href="https://github.com/Mechanical-Advantage/AdvantageKit/blob/main/docs/INSTALLATION.md#robot-configuration">here</a>.</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Robot</span> <span style="color:#66d9ef">extends</span> TimedRobot {
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">//...</span>
@@ -317,6 +319,24 @@ More info <a href="https://github.com/Mechanical-Advantage/AdvantageKit/blob/mai
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><hr>
 <p>If you find time, check out <a href="https://github.com/Mechanical-Advantage/AdvantageKit/tree/main/docs">Mechanical Advantage&rsquo;s documentation</a>, as there are many other cool features of AdvantageKit, such as simulation. Also check out <a href="https://github.com/Mechanical-Advantage/AdvantageScope">AdvantageScope</a>, a nice way to view your logs.</p>
+<h1 id="how-in-the-world-do-i-log-swerve">How in the World do I Log Swerve?<a hidden class="anchor" aria-hidden="true" href="#how-in-the-world-do-i-log-swerve">#</a></h1>
+<p>Logging swerve was a big question when I first started out. I&rsquo;ll show how I did it, maybe giving you a head start.</p>
+<p>In our <code>SwerveSubsystem.class</code> I added a method:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// Send the swerve modules&#39; encoder positions to Advantage Kit</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">logSwerveStates</span>() {
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    Logger.<span style="color:#a6e22e">recordOutput</span>(<span style="color:#e6db74">&#34;SwerveState&#34;</span>, <span style="color:#66d9ef">new</span> SwerveModuleState<span style="color:#f92672">[]</span> {
+</span></span><span style="display:flex;"><span>            frontLeft.<span style="color:#a6e22e">getState</span>(),
+</span></span><span style="display:flex;"><span>            frontRight.<span style="color:#a6e22e">getState</span>(),
+</span></span><span style="display:flex;"><span>            backLeft.<span style="color:#a6e22e">getState</span>(),
+</span></span><span style="display:flex;"><span>            backRight.<span style="color:#a6e22e">getState</span>()
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> SwerveModuleState <span style="color:#a6e22e">getState</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> SwerveModuleState(getDriveVelocity(), <span style="color:#66d9ef">new</span> Rotation2d(getTurningPosition()));
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Each serve module has a <code>getState()</code> method. They each return a <code>SwerveModuleState</code> that is added to the <code>SwerveModuleState[]</code> array. The <code>SwerveModuleState[]</code> is then recorded by the <code>recordOutput()</code> method.</p>
+<p>Recording the desired swerve states is also useful, as you can then see if the code and real world line up. Log them the same as before, but with the desired states every time they are updated, also making sure the names are different.</p>
 <h1 id="credits">Credits<a hidden class="anchor" aria-hidden="true" href="#credits">#</a></h1>
 <p>These instructions were based off <a href="https://github.com/Mechanical-Advantage/AdvantageKit/blob/main/docs/INSTALLATION.md">Mechanical Advantage&rsquo;s own install instructions</a>. If you have more questions, please check their tutorials or <a href="https://github.com/FIRST-Team-2472/Parallax-2024-Revamped/blob/main/src/main/java/frc/robot/subsystems/SwerveSubsystem.java">our 2024 comp code</a>, specifically in the <code>SwerveSubsystem.class</code>. All credit goes to team Mechanical Advantage for the wonderful libraries and tools.</p>
 
