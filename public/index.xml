@@ -6,8 +6,15 @@
     <description>Recent content on WolfBoy55014</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 May 2024 15:41:01 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 30 May 2024 16:10:33 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/Blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Command Based Robots in WPILib</title>
+      <link>http://localhost:1313/Blog/posts/command_based_robots/command_based_robots/</link>
+      <pubDate>Thu, 30 May 2024 16:10:33 -0500</pubDate>
+      <guid>http://localhost:1313/Blog/posts/command_based_robots/command_based_robots/</guid>
+      <description></description>
+    </item>
     <item>
       <title>AdvantageKit Quick-Start</title>
       <link>http://localhost:1313/Blog/posts/advantagekit_quickstart/advantagekit_quickstart/</link>
